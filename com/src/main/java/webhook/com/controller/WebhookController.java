@@ -23,7 +23,11 @@ public class WebhookController {
     @GetMapping
     public ResponseEntity<List<Webhook>> getAllWebhooks() {
         log.info("Fetching all webhooks");
+        log.info("Fetching all        log.info(\"Fetching all webhooks\");\r\n"
+        		+ " webhooks");
         log.info("Fetching all webhooks");
+        log.info("Fetching all        log.info(\"Fetching all webhooks\");\r\n"
+        		+ " webhooks");
 
         return ResponseEntity.ok(webhookRepository.findAll());
     }
